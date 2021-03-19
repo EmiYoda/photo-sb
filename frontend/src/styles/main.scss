@@ -1,0 +1,27 @@
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+* {
+  font-family: "Recursive", sans-serif;
+}
+
+body {
+  background: url("../camera1.png") #1b1b1b no-repeat center center fixed;
+}
+
+//* variables
+$base-red: #f34e4eec;
+$secondary-red: #df4040ec;
+$base-white: #e4dedeec;
+$base-black: #1b1b1b;
+$instagram-red: #e4405f;
+$twitter-blue: #00acee;
+
+//*imports
+@import "App.scss";
+@import "Navbar.scss";
+@import "Home.scss";
+@import "About.scss";
+@import "index.scss";

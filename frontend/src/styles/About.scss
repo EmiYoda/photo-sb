@@ -1,0 +1,49 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.452);
+  .left {
+    display: grid;
+    &__icons {
+      display: grid;
+      grid-gap: 50px;
+      grid-template-columns: 1fr 1fr 1fr;
+      transform: translateX(350px);
+    }
+
+    &__icon {
+      font-size: 44px;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .icon-twitter {
+      &:hover {
+        color: $twitter-blue;
+      }
+    }
+
+    .icon-instagram {
+      &:hover {
+        color: $instagram-red;
+      }
+    }
+
+    .icon-email {
+      &:hover {
+        color: $base-red;
+      }
+    }
+  }
+
+  .right {
+    padding: 10px 5px;
+    width: 40%;
+    font-size: 15px;
+  }
+}
