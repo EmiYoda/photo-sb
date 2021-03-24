@@ -1,22 +1,54 @@
 .about {
   display: flex;
-  align-items: center;
+  background: none !important;
   justify-content: space-between;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.452);
+  transform: translateY(100px);
+  color: $base-white;
+
+  &__modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 1px solid $base-white;
+    background: $secondary-white;
+    overflow: auto;
+    padding: 20px;
+  }
+
+  &__modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  &__modal-content {
+  }
+
   .left {
     display: grid;
     &__icons {
       display: grid;
+      align-items: center;
       grid-gap: 50px;
       grid-template-columns: 1fr 1fr 1fr;
       transform: translateX(350px);
+      a {
+        color: $base-white;
+      }
     }
 
     &__icon {
       font-size: 44px;
       transition: 0.3s ease-in-out;
 
+      &:active {
+        opacity: 0.5;
+      }
       &:hover {
         cursor: pointer;
       }
@@ -42,7 +74,7 @@
   }
 
   .right {
-    padding: 10px 5px;
+    padding: 10px 80px;
     width: 40%;
     font-size: 15px;
   }

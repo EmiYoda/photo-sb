@@ -1,11 +1,17 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 
-function LoginSignup() {
+const LoginSignup = () => {
   return (
     <div className="LoginSignup">
-      <h1>Login / Signup</h1>
+      <div className="LoginSignup-form">
+        <form className="LoginSignup-form__signin">
+          <input type="email" placeholder="Email" autoFocus />
+          <input type="password" placeholder="Password" />
+        </form>
+      </div>
     </div>
   );
-}
+};
 
 export default LoginSignup;
